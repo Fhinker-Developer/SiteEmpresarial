@@ -1,0 +1,43 @@
+@import url("./config.css");
+
+/*container que vai agrupar os items*/
+.lista-item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/*item visao , missao , valores*/
+.item {
+  display: flex;
+  justify-content: first baseline;
+  align-items: center;
+  flex-direction: column;
+
+  min-width: 250px;
+  max-width: 300px;
+  max-height: 300px;
+  min-height: 290px;
+
+  text-align: center;
+  margin: 16px;
+  background: white;
+
+  &:hover {
+    box-shadow: 0 0 4px var(--color-B1);
+    border-radius: 0.4em;
+  }
+  & p {
+    width: 90%;
+    text-align: left;
+    color: var(--color-D1);
+  }
+  & img {
+    border-radius: 50%;
+    background: linear-gradient(var(--color-B1), var(--color-B2));
+  }
+  & h1 {
+    color: var(--color-D2);
+  }
+}

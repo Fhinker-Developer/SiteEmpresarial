@@ -1,0 +1,20 @@
+@import url("./config.css");
+
+.list-services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  flex-wrap: wrap;
+
+  & .service {
+    min-width: 300px;
+    max-width: 390px;
+    max-height: 300px;
+    min-height: 290px;
+    margin: 16px;
+
+    border: 1px solid black;
+  }
+}
